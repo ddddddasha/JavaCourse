@@ -2,20 +2,20 @@ package Lesson3;
 import java.util.Scanner;
 
 public class Rainbow {
-    public static final int NUMBER_RED = 1;
-    public static final int NUMBER_ORANGE = 2;
-    public static final int NUMBER_YELLOW = 3;
-    public static final int NUMBER_GREEN = 4;
-    public static final int NUMBER_BLUE = 5;
-    public static final int NUMBER_DARK_BLUE = 6;
-    public static final int NUMBER_VIOLET = 7;
+    private static final int NUMBER_RED = 1;
+    private static final int NUMBER_ORANGE = 2;
+    private static final int NUMBER_YELLOW = 3;
+    private static final int NUMBER_GREEN = 4;
+    private static final int NUMBER_BLUE = 5;
+    private static final int NUMBER_DARK_BLUE = 6;
+    private static final int NUMBER_VIOLET = 7;
 
-    public static final String RED = "красный";
-    public static final String ORANGE = "оранжевый";
-    public static final String YELLOW = "желтый";
-    public static final String GREEN = "зеленый";
-    public static final String BLUE = "голубой";
-    public static final String DARK_BLUE = "синий";
+    private static final String RED = "красный";
+    private static final String ORANGE = "оранжевый";
+    private static final String YELLOW = "желтый";
+    private static final String GREEN = "зеленый";
+    private static final String BLUE = "голубой";
+    private static final String DARK_BLUE = "синий";
     public static final String VIOLET = "фиолетовый";
 
     public void whatColorIsIt(int number){

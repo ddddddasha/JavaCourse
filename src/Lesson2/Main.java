@@ -42,6 +42,8 @@ public class Main {
         mydouble = 11.21;
         myshort = 128;
 
+        int i = (int) example.mylong;
+        System.out.println(i);
         System.out.println("---------------------------------------");
         System.out.println("All values in class Main:");
         System.out.println(example.myint);
