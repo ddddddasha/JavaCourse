@@ -1,7 +1,5 @@
 package Lesson4;
 
-import java.util.Random;
-
 public class Cat {
     private int count;
     private String name = "noname";

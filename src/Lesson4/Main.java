@@ -36,7 +36,6 @@ public class Main {
         Random rand = new Random();
         return rand.nextInt(1,28);
     }
-
     public static void main(String[] args) {
         //создаем массив из котов
         Cat[] cats = new Cat[10];
