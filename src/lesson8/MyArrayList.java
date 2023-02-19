@@ -92,7 +92,7 @@ public class MyArrayList <T> implements MyList<T>{
                 else
                     tempArray[i] = list[i - 1];
             }
-            list = tempArray;//////как присвоить значение элементу класса
+            list = tempArray;
             size++;
         }
         else {
