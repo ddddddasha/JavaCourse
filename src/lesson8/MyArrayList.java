@@ -209,6 +209,8 @@ public class MyArrayList <T> implements MyList<T>{
     @Override
     public String toString() {
         return "MyArrayList{" +
-                "list=" + Arrays.toString(list) + '}';
+                "list=" + Arrays.toString(list) +
+                ", size=" + size() +
+                '}';
     }
 }
