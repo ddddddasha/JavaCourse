@@ -31,5 +31,4 @@ public class MatrixWorker {
         diagonals.concatDiagonals(diagonals.getTwoDiagonals());
         diagonals.checkStringOrDouble();
     }
-
 }

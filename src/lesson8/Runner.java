@@ -1,12 +1,13 @@
 package lesson8;
 
 public class Runner {
-
     public void run(){
+
         MyArrayList<Integer> myArrayList = new MyArrayList<>();
         System.out.println("Добавление в ArrayList по одному элементу в конец:");
         myArrayList.add(12);
         myArrayList.add(2);
+        myArrayList.add(90);
         myArrayList.add(90);
         myArrayList.printMyListArray();
         System.out.println("Добавление элемента 13 в ArrayList по заданному индексу 2:");
@@ -14,6 +15,8 @@ public class Runner {
         myArrayList.printMyListArray();
         System.out.println("Удаление элемента, которого нет в массиве:");
         Integer i = 122;
+        Integer j = 90;
+        myArrayList.remove(j);
         myArrayList.remove(i);
         System.out.println("Удаление элемента по индексу 1: ");
         myArrayList.remove(1);
@@ -41,7 +44,7 @@ public class Runner {
         myArrayList2.add(55);
         System.out.println("Добавление элементов ArrayList через конструктор:");
         MyArrayList<Integer> myArrayList3 = new MyArrayList<>(myArrayList2);
-        System.out.println(myArrayList3.toString());
+        System.out.println(myArrayList3);
     }
 
 }
