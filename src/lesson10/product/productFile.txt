@@ -1,0 +1,3 @@
+Product: idProduct: 140491, nameProduct: iPhone, productionData: 01-01-1973
+Product: idProduct: 354012, nameProduct: MacBook, productionData: 31-07-2028
+Product: idProduct: 850850, nameProduct: телефон, productionData: 25-11-2031
