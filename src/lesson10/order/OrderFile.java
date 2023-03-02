@@ -73,7 +73,7 @@ public class OrderFile {
                 iterator.remove();
             }
         }
-        try (var fileOutputStream = new FileOutputStream(fileOrder)){ //перезаписываем файл
+        try (var fileOutputStream = new FileOutputStream(fileOrder)){
             for (String item: lines){
                 fileOutputStream.write(item.getBytes(StandardCharsets.UTF_8));
                 fileOutputStream.write(System.lineSeparator().getBytes());
