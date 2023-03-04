@@ -31,47 +31,59 @@ public class Menu {
     }
 
     public void secondMenu(){
-        while (true){
-            System.out.println(Constants.SECOND_MENU);
-            int choice = scanner.nextInt();
-            switch (choice){
-                case 1:
-                    productFile.writeProductToFile();
-                    break;
-                case 2:
-                    productFile.deleteProductFromFile();
-                    break;
-                case 3:
-                    productFile.readProductFromFile();
-                    break;
-                case 4: mainMenu(); break;
-                default:
-                    System.out.println(Constants.ERROR_INPUT);
-                    break;
+        try{
+            while (true){
+                System.out.println(Constants.SECOND_MENU);
+                int choice = scanner.nextInt();
+                switch (choice){
+                    case 1:
+                        productFile.writeProductToFile();
+                        break;
+                    case 2:
+                        productFile.deleteProductFromFile();
+                        break;
+                    case 3:
+                        productFile.readProductFromFile();
+                        break;
+                    case 4: mainMenu(); break;
+                    default:
+                        System.out.println(Constants.ERROR_INPUT);
+                        break;
+                }
             }
+        }
+        catch (InputMismatchException e){
+            System.out.println(Constants.ERROR_INPUT);
         }
     }
 
     public void thirdMenu(){
-        while (true){
-            System.out.println(Constants.THIRD_MENU);
-            int choice = scanner.nextInt();
-            switch (choice){
-                case 1:
-                    productFile.readProductFromFile();
-                    orderFile.writeOrderToFile();
-                    break;
-                case 2:
-                    orderFile.deleteOrderFromFile();
-                    break;
-                case 3:
-                    orderFile.readOrdersFromFile();
-                    break;
-                case 4: mainMenu(); break;
-                default:
-                    System.out.println(Constants.ERROR_INPUT);
-                    break;
+        try {
+            while (true) {
+                System.out.println(Constants.THIRD_MENU);
+                int choice = scanner.nextInt();
+                switch (choice) {
+                    case 1:
+                        productFile.readProductFromFile();
+                        orderFile.writeOrderToFile();
+                        break;
+                    case 2:
+                        orderFile.deleteOrderFromFile();
+                        break;
+                    case 3:
+                        orderFile.readOrdersFromFile();
+                        break;
+                    case 4:
+                        mainMenu();
+                        break;
+                    default:
+                        System.out.println(Constants.ERROR_INPUT);
+                        break;
+                }
             }
+        }
+        catch (InputMismatchException e){
+            System.out.println(Constants.ERROR_INPUT);
         }
     }
 }
