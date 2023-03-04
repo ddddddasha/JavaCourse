@@ -39,7 +39,7 @@ public class Constants {
     }
 
     public static String randomData(){
-        Date date = new Date((long) ((2121212121212L)* Math.random()));
+        Date date = new Date((long) ((1212121212121L)* Math.random()));
         return simpleDateFormat.format(date);
     }
 }
